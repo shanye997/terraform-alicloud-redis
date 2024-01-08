@@ -37,7 +37,7 @@ variable "create_instance" {
 variable "engine_version" {
   description = "Redis version. Value options can refer to the latest docs [CreateInstance](https://help.aliyun.com/document_detail/60862.html?spm=a2c4g.11186623.6.770.e0c735c10lvrqR) "
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "instance_name" {
@@ -67,7 +67,7 @@ variable "secondary_zone_id" {
 variable "ssl_enable" {
   description = "Modifies the SSL status. Valid values: `Disable`, `Enable` and `Update`."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "security_group_id" {
